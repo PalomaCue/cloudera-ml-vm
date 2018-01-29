@@ -5,5 +5,11 @@ This instance shows how to provide the CDH virtual machine with any other tools 
 
 I aim to train with a unique machine in a pseudodistributed cluster, just for educational use. 
 
+## Contents
+The contents of the VM are:
+* Anaconda distribution
+* 
+
+
 
 ## Instalation
