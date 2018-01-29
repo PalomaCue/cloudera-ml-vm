@@ -5,8 +5,8 @@ This instance shows how to provide the CDH virtual machine with any other tools 
 
 I aim to train with a unique machine in a pseudodistributed cluster, the first step Cloudera proposes, just for educational use. 
 
-## Contents of CDH 
-The contents of the <a href="https://www.cloudera.com/downloads/quickstart_vms/5-12.html" >Cloudera Quickstart 5.12 Virtual Machine</a> are (raw content, without adding parcels):
+## Contents of Cloudera distribution of Apache Hadoop (CDH).
+The <a href="https://www.cloudera.com/downloads/quickstart_vms/5-12.html" >Cloudera Quickstart 5.12 Virtual Machine</a> includes:
 * Apache HBase
 * Apache Hive & Hive on Spark
 * Apache Impala
@@ -19,7 +19,10 @@ The contents of the <a href="https://www.cloudera.com/downloads/quickstart_vms/5
 * HDFS
 * Hue 4
 * ...
-
+Other open source available applications are:
+* Cloudera Manager
+* Cloudera Navigator
+* Cloudera Search
 
 
 
