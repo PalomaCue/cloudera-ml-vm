@@ -38,6 +38,12 @@ Based on CDH 5.12.0, I have added this tools:
 
 
 ## About
+* <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera" > Anaconda in Cloudera CDH </a> 
+
+Anaconda empowers the entire data science team -  data engineers, data scientists, and business analysts - to analyze data in Hadoop and deliver high value, high impact predictive and machine learning solutions with Python.
+
+Anaconda can be installed on a CDH cluster as a parcel.
+
 * <a href="https://jupyterhub.readthedocs.io/en/latest/" > JupyterHub </a> 
 
 With JupyterHub you can create a multi-user Hub which spawns, manages, and proxies multiple instances of the single-user Jupyter notebook server.
@@ -49,6 +55,30 @@ Project Jupyter created JupyterHub to support many users. The Hub can offer note
 
 ## Instalation
 
+
+### <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera"> Anaconda on Cloudera CDH </a>  
+
+To install the Anaconda parcel:
+
+1. In the Cloudera Manager Admin Console, in the top navigation bar, click the Parcels icon.
+
+2. At the top right of the parcels page, click the Edit Settings button.
+
+3. In the Remote Parcel Repository URLs section, click the plus symbol, and then add the following repository URL for the Anaconda parcel:
+
+4. At the top of the page, click the Save Changes button.
+
+5. In the top navigation bar, click the Parcels icon to return to the list of available parcels, where you should see the latest version of the Anaconda parcel that is available.
+
+6. To the right of the Anaconda parcel listing, click the Download button.
+
+7. After the parcel is downloaded, click the Distribute button to distribute the parcel to all of the cluster nodes.
+
+8. After the parcel is distributed, click the Activate button to activate the parcel on all of the cluster nodes.
+
+When prompted, confirm the activation.
+
+After the parcel is activated, Anaconda is available on all of the cluster nodes.
 
 
 
