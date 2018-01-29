@@ -55,7 +55,7 @@ Project Jupyter created JupyterHub to support many users. The Hub can offer note
 
 ## References & more info
 * <a href="https://docs.anaconda.com/anaconda-scale/spark">Using Anaconda with Spark</a>
-* <a href="hhttps://www.cloudera.com/products/open-source/apache-hadoop/key-cdh-components.html">CDH Components</a>
+* <a href="https://www.cloudera.com/products/open-source/apache-hadoop/key-cdh-components.html">CDH Components</a>
 * <a href="https://docs.anaconda.com/anaconda-scale/spark">Using Anaconda with Spark</a>
 
 
