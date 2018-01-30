@@ -63,7 +63,7 @@ There are two methods of using Anaconda on an existing cluster with Cloudera CDH
 * Use the Anaconda parcel for Cloudera CDH. The following procedure describes how to install the Anaconda parcel on a CDH cluster using Cloudera Manager. The Anaconda parcel provides a static installation of Anaconda, based on Python 2.7, that can be used with Python and PySpark jobs on the cluster.
 * Use Anaconda Scale, which provides additional functionality, including the ability to manage multiple conda environments and packages, including Python and R, alongside an existing CDH cluster. For more information, see Using Anaconda with Cloudera CDH.
 
-<u I am going to use the first method. Basically because is open source, althought we have several limitations that I will try to solve> I am going to use the first method. Basically because is open source, althought we have several limitations that I will try to solve.</u>
+<i> I am going to use the first method. Basically because is open source, althought we have several limitations that I will try to solve> I am going to use the first method. Basically because is open source, althought we have several limitations that I will try to solve.</i>
 
 To install the Anaconda parcel:
 
