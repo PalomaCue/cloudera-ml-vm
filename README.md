@@ -55,7 +55,6 @@ Project Jupyter created JupyterHub to support many users. The Hub can offer note
 
 ## Instalation
 
-### ANACONDA PARCELS
 
 ### <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera"> Anaconda on Cloudera CDH </a>  
 
@@ -64,7 +63,7 @@ There are two methods of using Anaconda on an existing cluster with Cloudera CDH
 * Use the Anaconda parcel for Cloudera CDH. The following procedure describes how to install the Anaconda parcel on a CDH cluster using Cloudera Manager. The Anaconda parcel provides a static installation of Anaconda, based on Python 2.7, that can be used with Python and PySpark jobs on the cluster.
 * Use Anaconda Scale, which provides additional functionality, including the ability to manage multiple conda environments and packages, including Python and R, alongside an existing CDH cluster. For more information, see Using Anaconda with Cloudera CDH.
 
---I am going to use the first method. Basically because is open source, althought we have several limitations that I will try to solve.
+<u> I am going to use the first method. Basically because is open source, althought we have several limitations that I will try to solve. </u>
 
 To install the Anaconda parcel:
 
@@ -96,7 +95,7 @@ NOTE: The line break in the example above is for readability only. Enter the com
 
 NOTE: The repository URL shown above installs the most recent version of the Anaconda parcel. To install an older version of the Anaconda parcel, add the following repository URL to the Remote Parcel Repository URLs in Cloudera manager, and then follow the above steps with your desired version of the Anaconda parcel.
 
---Anaconda builds new Cloudera parcels at least once a year each spring and also offers custom parcel creation for our enterprise customers. The Anaconda parcel provided at the repository URL shown above is based on Python 2.7.
+<u> Anaconda builds new Cloudera parcels at least once a year each spring and also offers custom parcel creation for our enterprise customers. The Anaconda parcel provided at the repository URL shown above is based on Python 2.7. </u>
 
 
 
