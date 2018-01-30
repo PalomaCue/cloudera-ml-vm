@@ -112,5 +112,6 @@ NOTE: The repository URL shown above installs the most recent version of the Ana
 
 * <a href="https://www.anaconda.com/blog/developer-blog/using-anaconda-pyspark-distributed-language-processing-hadoop-cluster/">Using Anaconda with Pyspark for Distributed Language Processing on a Hadoop Cluster</a> (April 12th 2016)
 * <a href="https://www.anaconda.com/blog/developer-blog/self-service-open-data-science-custom-anaconda-parcels-cloudera-cdh/">Custom Anaconda Parcels for Cloudera CDH</a> (October 31st 2016)
+* <a href="http://blog.cloudera.com/blog/2016/02/making-python-on-apache-hadoop-easier-with-anaconda-and-cdh/"> Making Python on Apache Hadoop Easier with Anaconda and CDH </a> 
 
-Pay attention to the versions, because these last two posts could be a little deprecated.
+Pay attention to the versions, because these last three posts could be a little deprecated.
