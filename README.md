@@ -89,9 +89,8 @@ After the parcel is activated, Anaconda is available on all of the cluster nodes
 
 You can submit Spark jobs along with the `PYSPARK_PYTHON` environment variable that refers to the location of Anaconda. For example, enter the following command all on one line:
 
-` 
-PYSPARK_PYTHON=/opt/cloudera/parcels/Anaconda/bin/python spark-submit pyspark_script.py
-`
+    PYSPARK_PYTHON=/opt/cloudera/parcels/Anaconda/bin/python spark-submit pyspark_script.py
+
 
 NOTE: The line break in the example above is for readability only. Enter the command all on one line.
 
