@@ -117,4 +117,4 @@ NOTE: The repository URL shown above installs the most recent version of the Ana
 
 Pay attention to the versions, because these last three posts could be a little deprecated.
 
-<i>The main point we should take care would be a matter of versions, specially with Python. To sum up, I could suggest a parcial solution could be install Python 3 manually. One instalation per node. We aim to work and visualize on a mutli-user environment with Jupyther Hub.</i>
+<i> The main point we should take care would be a matter of versions, specially with Python. To sum up, I could suggest a parcial solution could be install Python 3 manually. One installation per node. We aim to work and visualize notebooks on a mutli-user environment with Jupyther Hub.</i>
