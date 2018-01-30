@@ -30,7 +30,7 @@ Other open source available applications are:
 Based on CDH 5.12.0, I have added this tools:
 * <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera" >Anaconda 4.3.1 distribution</a> 
 * <a href="https://github.com/jupyterhub/jupyterhub" > JupyterHub </a>
-* Apache Kafka 
+* Apache Kafka 3.0.0
 * Apache Flink
 * Apache Flume
 * ...
@@ -55,8 +55,16 @@ Project Jupyter created JupyterHub to support many users. The Hub can offer note
 
 ## Instalation
 
+### ANACONDA PARCELS
 
 ### <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera"> Anaconda on Cloudera CDH </a>  
+
+There are two methods of using Anaconda on an existing cluster with Cloudera CDH, Cloudera’s distribution including Apache Hadoop:
+
+* Use the Anaconda parcel for Cloudera CDH. The following procedure describes how to install the Anaconda parcel on a CDH cluster using Cloudera Manager. The Anaconda parcel provides a static installation of Anaconda, based on Python 2.7, that can be used with Python and PySpark jobs on the cluster.
+* Use Anaconda Scale, which provides additional functionality, including the ability to manage multiple conda environments and packages, including Python and R, alongside an existing CDH cluster. For more information, see Using Anaconda with Cloudera CDH.
+
+--I am going to use the first method. Basically because is open source, althought we have several limitations that I will try to solve.
 
 To install the Anaconda parcel:
 
@@ -76,9 +84,20 @@ To install the Anaconda parcel:
 
 8. After the parcel is distributed, click the Activate button to activate the parcel on all of the cluster nodes.
 
-When prompted, confirm the activation.
+9. When prompted, confirm the activation.
 
 After the parcel is activated, Anaconda is available on all of the cluster nodes.
+
+You can submit Spark jobs along with the PYSPARK_PYTHON environment variable that refers to the location of Anaconda. For example, enter the following command all on one line:
+
+PYSPARK_PYTHON=/opt/cloudera/parcels/Anaconda/bin/python spark-submit pyspark_script.py
+
+NOTE: The line break in the example above is for readability only. Enter the command all on one line.
+
+NOTE: The repository URL shown above installs the most recent version of the Anaconda parcel. To install an older version of the Anaconda parcel, add the following repository URL to the Remote Parcel Repository URLs in Cloudera manager, and then follow the above steps with your desired version of the Anaconda parcel.
+
+--Anaconda builds new Cloudera parcels at least once a year each spring and also offers custom parcel creation for our enterprise customers. The Anaconda parcel provided at the repository URL shown above is based on Python 2.7.
+
 
 
 
@@ -87,6 +106,9 @@ After the parcel is activated, Anaconda is available on all of the cluster nodes
 * <a href="https://docs.anaconda.com/anaconda-scale/spark">Using Anaconda with Spark</a>
 * <a href="https://www.cloudera.com/products/open-source/apache-hadoop/key-cdh-components.html">CDH Components</a>
 * <a href="https://docs.anaconda.com/anaconda-scale/spark">Using Anaconda with Spark</a>
+* <a href="https://docs.anaconda.com/anaconda/packages/pkg-docs"> Anaconda Packages included by default </a> 
+* <a href="https://jupyterhub.readthedocs.io/en/latest/quickstart.html#prerequisites"> Installing JupyterHub </a> 
+* <a href="https://docs.anaconda.com/anaconda/packages/py3.5_linux-64"> Packages for 64-bit Linux with Python 3.5 </a> 
 
 
 * <a href="https://www.anaconda.com/blog/developer-blog/using-anaconda-pyspark-distributed-language-processing-hadoop-cluster/">Using Anaconda with Pyspark for Distributed Language Processing on a Hadoop Cluster</a> (April 12th 2016)
