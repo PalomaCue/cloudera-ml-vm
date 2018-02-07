@@ -103,8 +103,7 @@ NOTE: The repository URL shown above installs the most recent version of the Ana
 * <a href="https://docs.anaconda.com/anaconda/packages/py3.5_linux-64"> Packages for 64-bit Linux with Python 3.5 </a> 
 * <a href="https://www.cloudera.com/documentation/enterprise/5-6-x/topics/spark_python.html"> Running Spark Python Applications
  </a> 
-* <a href="https://www.cloudera.com/documentation/enterprise/5-7-x/topics/spark_ipython.html#ipython"> Running Spark Applications Using IPython and Jupyter Notebooks
- </a> 
+* <a href="https://www.cloudera.com/documentation/enterprise/5-7-x/topics/spark_ipython.html#ipython"> Running Spark Applications Using IPython and Jupyter Notebooks </a> 
  
 
 
