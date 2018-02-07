@@ -50,6 +50,8 @@ With JupyterHub you can create a multi-user Hub which spawns, manages, and proxi
 
 Project Jupyter created JupyterHub to support many users. The Hub can offer notebook servers to a class of students, a corporate data science workgroup, a scientific research project, or a high performance computing group.
 
+* <a href="https://www.python.org/download/releases/3.4.3/" > Python 3.4.3 </a> 
+
 
 
 
