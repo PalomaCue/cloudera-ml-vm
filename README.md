@@ -68,21 +68,13 @@ There are two methods of using Anaconda on an existing cluster with Cloudera CDH
 To install the Anaconda parcel:
 
 1. In the Cloudera Manager Admin Console, in the top navigation bar, click the Parcels icon.
-
 2. At the top right of the parcels page, click the Edit Settings button.
-
 3. In the Remote Parcel Repository URLs section, click the plus symbol, and then add the following repository URL for the Anaconda parcel:
-
 4. At the top of the page, click the Save Changes button.
-
 5. In the top navigation bar, click the Parcels icon to return to the list of available parcels, where you should see the latest version of the Anaconda parcel that is available.
-
 6. To the right of the Anaconda parcel listing, click the Download button.
-
 7. After the parcel is downloaded, click the Distribute button to distribute the parcel to all of the cluster nodes.
-
 8. After the parcel is distributed, click the Activate button to activate the parcel on all of the cluster nodes.
-
 9. When prompted, confirm the activation.
 
 After the parcel is activated, Anaconda is available on all of the cluster nodes.
@@ -111,6 +103,9 @@ NOTE: The repository URL shown above installs the most recent version of the Ana
 * <a href="https://docs.anaconda.com/anaconda/packages/py3.5_linux-64"> Packages for 64-bit Linux with Python 3.5 </a> 
 * <a href="https://www.cloudera.com/documentation/enterprise/5-6-x/topics/spark_python.html"> Running Spark Python Applications
  </a> 
+ * <a href="https://www.cloudera.com/documentation/enterprise/5-7-x/topics/spark_ipython.html#ipython"> Running Spark Applications Using IPython and Jupyter Notebooks
+ </a> 
+ 
 
 
 * <a href="https://www.anaconda.com/blog/developer-blog/using-anaconda-pyspark-distributed-language-processing-hadoop-cluster/">Using Anaconda with Pyspark for Distributed Language Processing on a Hadoop Cluster</a> (April 12th 2016)
