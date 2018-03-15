@@ -30,8 +30,8 @@ Other open source available applications are:
 Based on CDH 5.12.0, I have added this tools:
 * <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera" >Anaconda 4.3.1 distribution</a> 
 * <a href="https://github.com/jupyterhub/jupyterhub" > JupyterHub </a>
-* <a href="https://www.cloudera.com/documentation/kafka/latest/topics/kafka_installing.html#concept_m2t_d45_4r" >Kafka 3.0.0
-* <a href="https://github.com/mbalassi/flink-parcel" >Apache Flink
+* <a href="https://www.cloudera.com/documentation/kafka/latest/topics/kafka_installing.html#concept_m2t_d45_4r" >Kafka 3.0.0 </a>
+* <a href="https://github.com/mbalassi/flink-parcel" >Apache Flink 1.0.3 </a>
 * Apache Flume
 * ...
 
