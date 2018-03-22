@@ -112,6 +112,12 @@ NOTE: The repository URL shown above installs the most recent version of the Ana
 * <a href="https://www.anaconda.com/blog/developer-blog/self-service-open-data-science-custom-anaconda-parcels-cloudera-cdh/">Custom Anaconda Parcels for Cloudera CDH</a> (October 31st 2016)
 * <a href="http://blog.cloudera.com/blog/2016/02/making-python-on-apache-hadoop-easier-with-anaconda-and-cdh/"> Making Python on Apache Hadoop Easier with Anaconda and CDH </a> 
 
+## Even more
+* <a href="http://recordservice.io/installOnCluster/"> Installing RecordService on Your CDH Cluster </a>
+
+
+
+
 Pay attention to the versions, because these last three posts could be a little deprecated.
 
 <i> The main point we should take care would be a matter of versions, specially with Python. To sum up, I could suggest a parcial solution could be install Python 3 manually. One installation per node. We aim to work and visualize notebooks on a mutli-user environment with Jupyther Hub.</i>
