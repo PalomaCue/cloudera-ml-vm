@@ -118,7 +118,7 @@ I followed the steps to install Spark 2:
     
        `sudo service cloudera-scm-server restart`
     
-    Log in to the Cloudera Manager Admin Console and restart the Cloudera Manager Service with 
+   Log in to the Cloudera Manager Admin Console and restart the Cloudera Manager Service with:
     
        `sudo service cloudera-scm-agent restart`
  
