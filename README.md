@@ -99,7 +99,9 @@ I followed the steps to install Spark 2:
 
 1. See <a href="https://www.cloudera.com/documentation/spark2/latest/topics/spark2_requirements.html#scala_version"> Spark 2 Requirements </a> and check them.
 
-2. Install the Spark 2 CSD into Cloudera Manager.
+2. Install the Spark 2 CSD into Cloudera Manager. 
+
+Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in the location configured for CSD files. Set the file ownership of the CSD file to `cloudera-scm:cloudera-scm` with permission 644. Or what is the same, a little more slowly:
 
  a. Download <a href="https://www.cloudera.com/documentation/spark2/latest/topics/spark2_packaging.html#versions"> the Spark 2 CSD </a>.   I choose the last version (version 2.2, relase 2).
  
@@ -123,27 +125,42 @@ I followed the steps to install Spark 2:
        sudo service cloudera-scm-agent restart
  
  f. Check whether the CSD successfully installed in http://quickstart.cloudera:7180/cmf/csd/refresh. Search for the following entry:
- .....
+
+
+    {
+    "csdName":"SPARK2_ON_YARN-2.2.0.cloudera2",
+    "serviceType":"SPARK2_ON_YARN",
+    "source":"/opt/cloudera/csd/SPARK2_ON_YARN-2.2.0.cloudera2.jar",
+    "isInstalled":true
+    }
  
- Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in the location configured for CSD files.
-    Set the file ownership of the CSD file to `cloudera-scm:cloudera-scm` with permission 644.
- 
- c. Restart the Cloudera Manager Server with the following command:
+ g. Restart the Cloudera Manager Server with the following command:
          
          service cloudera-scm-server restart
 
 3. In the Cloudera Manager Admin Console, add the Spark2 parcel repository to the Remote Parcel Repository URLs in Parcel Settings as described in remote repository URLs.
+
 Note: If your Cloudera Manager Server does not have Internet access, you can use the Spark 2 parcel files, put them into a new parcel repository, and then configure the Cloudera Manager Server to target this newly created repository.
-Download the Spark 2 parcel, distribute the parcel to the hosts in your cluster, and activate the parcel. See Managing Parcels.
-Add the Spark 2 service to your cluster.
-In the step #1, select a dependency option:
-HDFS, YARN, ZooKeeper: Choose this option if you do not need access to a Hive service.
-HDFS, Hive, YARN, ZooKeeper: Hive is an optional dependency for the Spark service. If you have a Hive service and want to access Hive tables from your Spark applications, choose this option to include Hive as a dependency and have the Hive client configurations always available to Spark applications.
-In the step #2, when customizing the role assignments for Spark 2, add a gateway role to every host.
-Note that the History Server port is 18089 instead of the usual 18088.
-Complete the steps to add the Spark 2 service.
-Return to the Home page by clicking the Cloudera Manager logo.
-Click  to restart the cluster.
+
+4. Download the Spark 2 parcel, distribute the parcel to the hosts in your cluster, and activate the parcel. See Managing Parcels.
+
+5. Add the Spark 2 service to your cluster.
+
+ a. In the step #1, select a dependency option:
+ 
+   HDFS, YARN, ZooKeeper: Choose this option if you do not need access to a Hive service.
+
+   HDFS, Hive, YARN, ZooKeeper: Hive is an optional dependency for the Spark service. If you have a Hive service and want to access Hive tables from your Spark applications, choose this option to include Hive as a dependency and have the Hive client configurations always available to Spark applications.
+   
+  b. In the step #2, when customizing the role assignments for Spark 2, add a gateway role to every host.
+
+  c. Note that the History Server port is 18089 instead of the usual 18088.
+
+  d. Complete the steps to add the Spark 2 service.
+
+  e.  Return to the Home page by clicking the Cloudera Manager logo.
+  
+  f.  Click  to restart the cluster.
 
 ## References & more info
 * <a href="https://docs.anaconda.com/anaconda-scale/spark">Using Anaconda with Spark</a>
