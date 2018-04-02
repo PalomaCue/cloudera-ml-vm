@@ -138,7 +138,7 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
          
          service cloudera-scm-server restart
 
-3. In the Cloudera Manager Admin Console, add the Spark2 parcel repository to the Remote Parcel Repository URLs in Parcel Settings as described in remote repository URLs.
+3. In the Cloudera Manager Admin Console, add the <a href="https://www.cloudera.com/documentation/spark2/latest/topics/spark2_packaging.html#packaging"> Spark2 parcel repository </a> to the Remote Parcel Repository URLs in Parcel Settings as described in <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_parcels.html#cmug_topic_7_11_5__section_sd4_bzx_bm"> remote repository URLs.</a>
 
 Note: If your Cloudera Manager Server does not have Internet access, you can use the Spark 2 parcel files, put them into a new parcel repository, and then configure the Cloudera Manager Server to target this newly created repository.
 
