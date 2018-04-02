@@ -107,18 +107,20 @@ I followed the steps to install Spark 2:
  
  c. Change the owner and group for the JAR:
  
- `sudo chown cloudera-scm:cloudera-scm /opt/cloudera/csd/SPARK2_ON_YARN-2.2.0.cloudera2.jar` 
+     `sudo chown cloudera-scm:cloudera-scm /opt/cloudera/csd/SPARK2_ON_YARN-2.2.0.cloudera2.jar` 
  
  d. Update the permissions on the file:
  
-`sudo chmod 644 /opt/cloudera/csd/RECORD_SERVICE-0.3.0.jar`
+      `sudo chmod 644 /opt/cloudera/csd/RECORD_SERVICE-0.3.0.jar`
  
  e. Restart the Cloudera Manager server:
     As the root user on the Cloudera Manager server, run 
-    `sudo service cloudera-scm-server restart`.
+    
+       `sudo service cloudera-scm-server restart`
+    
     Log in to the Cloudera Manager Admin Console and restart the Cloudera Manager Service with 
     
-    `sudo service cloudera-scm-agent restart`
+       `sudo service cloudera-scm-agent restart`
  
  f. Check whether the CSD successfully installed in http://quickstart.cloudera:7180/cmf/csd/refresh. Search for the following entry:
  .....
