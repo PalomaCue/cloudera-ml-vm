@@ -107,20 +107,20 @@ I followed the steps to install Spark 2:
  
  c. Change the owner and group for the JAR:
  
-     `sudo chown cloudera-scm:cloudera-scm /opt/cloudera/csd/SPARK2_ON_YARN-2.2.0.cloudera2.jar` 
+     sudo chown cloudera-scm:cloudera-scm /opt/cloudera/csd/SPARK2_ON_YARN-2.2.0.cloudera2.jar
  
  d. Update the permissions on the file:
  
-      `sudo chmod 644 /opt/cloudera/csd/RECORD_SERVICE-0.3.0.jar`
+      sudo chmod 644 /opt/cloudera/csd/RECORD_SERVICE-0.3.0.jar
  
  e. Restart the Cloudera Manager server:
     As the root user on the Cloudera Manager server, run 
     
-       `sudo service cloudera-scm-server restart`
+       sudo service cloudera-scm-server restart
     
    Log in to the Cloudera Manager Admin Console and restart the Cloudera Manager Service with:
     
-       `sudo service cloudera-scm-agent restart`
+       sudo service cloudera-scm-agent restart
  
  f. Check whether the CSD successfully installed in http://quickstart.cloudera:7180/cmf/csd/refresh. Search for the following entry:
  .....
@@ -130,7 +130,7 @@ I followed the steps to install Spark 2:
  
  c. Restart the Cloudera Manager Server with the following command:
          
-         `service cloudera-scm-server restart`
+         service cloudera-scm-server restart
 
 3. In the Cloudera Manager Admin Console, add the Spark2 parcel repository to the Remote Parcel Repository URLs in Parcel Settings as described in remote repository URLs.
 Note: If your Cloudera Manager Server does not have Internet access, you can use the Spark 2 parcel files, put them into a new parcel repository, and then configure the Cloudera Manager Server to target this newly created repository.
