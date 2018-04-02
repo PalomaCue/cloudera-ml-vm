@@ -140,21 +140,21 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
 
 3. In the Cloudera Manager Admin Console, add the <a href="https://www.cloudera.com/documentation/spark2/latest/topics/spark2_packaging.html#packaging"> Spark2 parcel repository </a> to the Remote Parcel Repository URLs in Parcel Settings as described in <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_parcels.html#cmug_topic_7_11_5__section_sd4_bzx_bm"> remote repository URLs.</a>
 
-Note: If your Cloudera Manager Server does not have Internet access, you can use the Spark 2 parcel files, put them into a new parcel repository, and then configure the Cloudera Manager Server to target this newly created repository.
-
-4. Download the Spark 2 parcel, distribute the parcel to the hosts in your cluster, and activate the parcel. See Managing Parcels.
+4. Download the Spark 2 parcel, distribute the parcel to the hosts in your cluster, and activate the parcel. See <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_parcels.html#concept_vwq_421_yk"> Managing Parcels. </a>
 
 5. Add the Spark 2 service to your cluster.
 
  a. In the step #1, select a dependency option:
  
-   HDFS, YARN, ZooKeeper: Choose this option if you do not need access to a Hive service.
+  *  HDFS, YARN, ZooKeeper: Choose this option if you do not need access to a Hive service.
 
-   HDFS, Hive, YARN, ZooKeeper: Hive is an optional dependency for the Spark service. If you have a Hive service and want to access Hive tables from your Spark applications, choose this option to include Hive as a dependency and have the Hive client configurations always available to Spark applications.
+  *  HDFS, Hive, YARN, ZooKeeper: Hive is an optional dependency for the Spark service. If you have a Hive service and want to access Hive tables from your Spark applications, choose this option to include Hive as a dependency and have the Hive client configurations always available to Spark applications.
+  
+  I chose the second option.
    
-  b. In the step #2, when customizing the role assignments for Spark 2, add a gateway role to every host.
+  b. In the step #2, when customizing the role assignments for Spark 2, add a <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_mc_managing_roles.html"> gateway role </a> to every host.
 
-  c. Note that the History Server port is 18089 instead of the usual 18088.
+  c. Note that the History Server port is 18089 instead of the usual 18088.  ***CHECK IT***
 
   d. Complete the steps to add the Spark 2 service.
 
