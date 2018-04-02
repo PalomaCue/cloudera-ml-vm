@@ -112,7 +112,6 @@ I followed the steps to install Spark 2:
  f. Check whether the CSD successfully installed in http://quickstart.cloudera:7180/cmf/csd/refresh. Search for the following entry:
  .....
  
- 
  Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in the location configured for CSD files.
     Set the file ownership of the CSD file to `cloudera-scm:cloudera-scm` with permission 644.
  c. Restart the Cloudera Manager Server with the following command:
