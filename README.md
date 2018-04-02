@@ -111,7 +111,7 @@ I followed the steps to install Spark 2:
  
  d. Update the permissions on the file:
  
-      sudo chmod 644 /opt/cloudera/csd/RECORD_SERVICE-0.3.0.jar
+      sudo chmod 644 /opt/cloudera/csd/SPARK2_ON_YARN-2.2.0.cloudera2.jar
  
  e. Restart the Cloudera Manager server:
     As the root user on the Cloudera Manager server, run 
