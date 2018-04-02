@@ -180,6 +180,7 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
 
 ## Even more
 * <a href="http://recordservice.io/installOnCluster/"> Installing RecordService on Your CDH Cluster </a>
+* <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_parcels.html#concept_vwq_421_yk"> Managing Parcels. </a>
 
 
 
