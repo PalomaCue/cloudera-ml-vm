@@ -33,6 +33,7 @@ Based on CDH 5.12.0, I have added this tools:
 * <a href="https://www.cloudera.com/documentation/kafka/latest/topics/kafka_installing.html#concept_m2t_d45_4r" >Kafka 3.0.0 </a>
 * <a href="https://github.com/mbalassi/flink-parcel" >Apache Flink 1.0.3 </a>
 * Apache Flume
+* <a href="https://www.cloudera.com/documentation/enterprise/5-3-x/topics/cdh_cm_upgrading_to_jdk8.html" > Java 1.8 </a>
 * ...
 
 
@@ -178,13 +179,42 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
 * <a href="https://www.anaconda.com/blog/developer-blog/self-service-open-data-science-custom-anaconda-parcels-cloudera-cdh/">Custom Anaconda Parcels for Cloudera CDH</a> (October 31st 2016)
 * <a href="http://blog.cloudera.com/blog/2016/02/making-python-on-apache-hadoop-easier-with-anaconda-and-cdh/"> Making Python on Apache Hadoop Easier with Anaconda and CDH </a> 
 
-Pay attention to the versions, because these last three posts could be a little deprecated.
+Pay attention to the versions, because these last three posts could be a little deprecated. 
+
+*  <a href="https://www.cloudera.com/documentation/enterprise/release-notes/topics/rn_consolidated_pcm.html"> CDH 5 and Cloudera Manager 5 Requirements and Supported Versions </a>
 
 ## Even more
 * <a href="http://recordservice.io/installOnCluster/"> Installing RecordService on Your CDH Cluster </a>
 * <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_parcels.html#concept_vwq_421_yk"> Managing Parcels. </a>
+* <a href="https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora"> How To Install Java on CentOS and Fedora </a>
 
 
 
 
 <i> The main point we should take care would be a matter of versions, specially with Python. To sum up, I could suggest a parcial solution could be install Python 3 manually. One installation per node. We aim to work and visualize notebooks on a mutli-user environment with Jupyther Hub.</i>
+
+
+
+
+## Checking versions:
+
+#### Centos Version
+
+    $ rpm --query centos-release
+    
+or...
+    
+    $ lsb_release -d
+    
+    
+<a href="https://linuxconfig.org/how-to-check-centos-version"> See more </a>.
+
+#### Java version
+
+    java -version
+    
+    
+
+    
+
+
