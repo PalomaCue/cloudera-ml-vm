@@ -162,6 +162,35 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
   e.  Return to the Home page by clicking the Cloudera Manager logo.
   
   f.  Click  to restart the cluster.
+  
+  
+  
+## Installing Java 8 (Oracle JDK)
+------------------------
+FAILED
+In order to install Oracle Java 8 JDK, I will need to go to the Oracle Java 8 JDK Downloads Page, accept the license agreement, and copy the download link of the appropriate Linux .rpm package. Substitute the copied download link in place of the highlighted part of the wget command.
+
+I have changed to my home directory and downloaded the Oracle Java 8 JDK RPM with these commands:
+
+    $ cd ~
+    $ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://link_copied_from_site"
+--------------------------------
+
+The Oracle JDK installer is available both as an RPM-based installer for RPM-based systems, and as a binary installer for other systems.
+
+1. Download the `.tar.gz` file for one of the supported versions of the Oracle JDK from Java SE 8 Downloads.
+
+2. Extract the JDK to `/usr/java/jdk.1.8.`
+
+3. Set JAVA_HOME to the directory where the JDK is installed. Add the following line to the specified files:
+
+    export JAVA_HOME=/usr/java/jdk.1.7.0_nn
+
+ - Cloudera Manager Server host: /etc/default/cloudera-scm-server. This affects only the Cloudera Manager Server process, and does not affect the Cloudera Management Service roles.
+
+- All hosts in an unmanaged deployment (!!): `/etc/default/bigtop-utils`. You do not need to do this for clusters managed by Cloudera Manager.
+
+4. Follow the instructions in Configuring a Custom Java Home Location. This change affects all CDH processes and Cloudera Management Service roles in the cluster.
 
 ## References & more info
 * <a href="https://docs.anaconda.com/anaconda-scale/spark">Using Anaconda with Spark</a>
