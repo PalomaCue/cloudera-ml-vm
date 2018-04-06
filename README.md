@@ -151,9 +151,9 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
 
   *  HDFS, Hive, YARN, ZooKeeper: Hive is an optional dependency for the Spark service. If you have a Hive service and want to access Hive tables from your Spark applications, choose this option to include Hive as a dependency and have the Hive client configurations always available to Spark applications.
   
-  I chose the second option.
+  I chose the second option. Without Hive dependencies.
    
-  b. In the step #2, when customizing the role assignments for Spark 2, add a <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_mc_managing_roles.html"> gateway role </a> to every host.
+  b. In the step #2, when customizing the role assignments for Spark 2, DO NOT ADD the <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_mc_managing_roles.html"> gateway role </a> to every host. Inf fact, in our case is not needed. We do not have a NODO FRONTERA, because we do not have a "real" cluster. Thas why the only ...
 
   c. Note that the History Server port is 18089 instead of the usual 18088.  ***CHECK IT***
 
