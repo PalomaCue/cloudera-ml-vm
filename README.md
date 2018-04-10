@@ -26,14 +26,17 @@ Other open source available applications are:
 
 
 
-## Contents of CDH4ML
+## Contents of "my" CDH4ML
 Based on CDH 5.12.0, I have added this tools:
 * <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera" >Anaconda 4.3.1 distribution</a> 
+* Spark 2
+* <a href="http://blog.cloudera.com/blog/2014/08/how-to-use-ipython-notebook-with-apache-spark/" > Get the integration of IPython Notebook with Apache Spark </a>
 * <a href="https://github.com/jupyterhub/jupyterhub" > JupyterHub </a>
+* <a href="https://www.cloudera.com/documentation/enterprise/5-3-x/topics/cdh_cm_upgrading_to_jdk8.html" > Java 1.8 </a>
+* Java 1.8.
 * <a href="https://www.cloudera.com/documentation/kafka/latest/topics/kafka_installing.html#concept_m2t_d45_4r" >Kafka 3.0.0 </a>
 * <a href="https://github.com/mbalassi/flink-parcel" >Apache Flink 1.0.3 </a>
 * Apache Flume
-* <a href="https://www.cloudera.com/documentation/enterprise/5-3-x/topics/cdh_cm_upgrading_to_jdk8.html" > Java 1.8 </a>
 * ...
 
 
@@ -44,8 +47,6 @@ Based on CDH 5.12.0, I have added this tools:
 Anaconda empowers the entire data science team -  data engineers, data scientists, and business analysts - to analyze data in Hadoop and deliver high value, high impact predictive and machine learning solutions with Python.
 
 Anaconda can be installed on a CDH cluster as a parcel.
-
-* Spark 2
 
 * <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera" > Anaconda in Cloudera CDH </a> 
 
@@ -170,16 +171,6 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
   
 ### Installing Java 8 (Oracle JDK)
 
-FAILED!!!
-In order to install Oracle Java 8 JDK, I will need to go to the Oracle Java 8 JDK Downloads Page, accept the license agreement, and copy the download link of the appropriate Linux .rpm package. Substitute the copied download link in place of the highlighted part of the wget command.
-
-I have changed to my home directory and downloaded the Oracle Java 8 JDK RPM with these commands:
-
-    $ cd ~
-    $ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://link_copied_from_site"
---------------------------------
-OK NEXT:
-
 
 The Oracle JDK installer is available both as an RPM-based installer for RPM-based systems, and as a binary installer for other systems.
 
@@ -195,7 +186,11 @@ The Oracle JDK installer is available both as an RPM-based installer for RPM-bas
 
 - All hosts in an unmanaged deployment (!!): `/etc/default/bigtop-utils`. You do not need to do this for clusters managed by Cloudera Manager.
 
-4. Follow the instructions in Configuring a Custom Java Home Location. This change affects all CDH processes and Cloudera Management Service roles in the cluster.
+4. I followed the instructions in Configuring a Custom Java Home Location. This change affects all CDH processes and Cloudera Management Service roles in the cluster.
+
+
+
+
 
 ## References & more info
 * <a href="https://docs.anaconda.com/anaconda-scale/spark">Using Anaconda with Spark</a>
