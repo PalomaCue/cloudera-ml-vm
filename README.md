@@ -45,7 +45,11 @@ Anaconda empowers the entire data science team -  data engineers, data scientist
 
 Anaconda can be installed on a CDH cluster as a parcel.
 
-* <a href="https://jupyterhub.readthedocs.io/en/latest/" > JupyterHub </a> 
+* Spark 2
+
+* <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera" > Anaconda in Cloudera CDH </a> 
+
+* <a href="http://blog.cloudera.com/blog/2014/08/how-to-use-ipython-notebook-with-apache-spark/" > IPython Notebook </a> 
 
 With JupyterHub you can create a multi-user Hub which spawns, manages, and proxies multiple instances of the single-user Jupyter notebook server.
 
@@ -57,7 +61,6 @@ Project Jupyter created JupyterHub to support many users. The Hub can offer note
 
 
 ## Instalation
-
 
 ### <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/integration/cloudera"> Anaconda on Cloudera CDH </a>  
 
@@ -165,9 +168,9 @@ Log on to the Cloudera Manager Server host, and place the Spark 2 CSD file in th
   
   
   
-## Installing Java 8 (Oracle JDK)
-------------------------
-FAILED
+### Installing Java 8 (Oracle JDK)
+
+FAILED!!!
 In order to install Oracle Java 8 JDK, I will need to go to the Oracle Java 8 JDK Downloads Page, accept the license agreement, and copy the download link of the appropriate Linux .rpm package. Substitute the copied download link in place of the highlighted part of the wget command.
 
 I have changed to my home directory and downloaded the Oracle Java 8 JDK RPM with these commands:
@@ -175,6 +178,8 @@ I have changed to my home directory and downloaded the Oracle Java 8 JDK RPM wit
     $ cd ~
     $ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://link_copied_from_site"
 --------------------------------
+OK NEXT:
+
 
 The Oracle JDK installer is available both as an RPM-based installer for RPM-based systems, and as a binary installer for other systems.
 
