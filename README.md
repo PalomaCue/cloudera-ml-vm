@@ -180,13 +180,13 @@ The Oracle JDK installer is available both as an RPM-based installer for RPM-bas
 
 3. Set JAVA_HOME to the directory where the JDK is installed. Add the following line to the specified files:
 
-    export JAVA_HOME=/usr/java/jdk.1.7.0_nn
+    export JAVA_HOME=/usr/java/jdk.1.8.0_nn
 
  - Cloudera Manager Server host: /etc/default/cloudera-scm-server. This affects only the Cloudera Manager Server process, and does not affect the Cloudera Management Service roles.
 
 - All hosts in an unmanaged deployment (!!): `/etc/default/bigtop-utils`. You do not need to do this for clusters managed by Cloudera Manager.
 
-4. I followed the instructions in Configuring a Custom Java Home Location. This change affects all CDH processes and Cloudera Management Service roles in the cluster.
+4. I followed the <a href="https://www.cloudera.com/documentation/enterprise/5-6-x/topics/cdh_ig_jdk_installation.html#topic_29"> instructions in Configuring a Custom Java Home Location </a>. This change affects all CDH processes and Cloudera Management Service roles in the cluster.
 
 
 
