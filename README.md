@@ -242,8 +242,13 @@ or...
 
     java -version
     
-    
+#### Spark version
 
+    spark-shell --version
     
+#### Python version
 
+    python --version
+    
+The main problem I try to solve is that we will find several versions installed within the vm, and we must point to one or another version according to our use.
 
