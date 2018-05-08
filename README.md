@@ -217,7 +217,8 @@ Pay attention to the versions, because these last three posts could be a little 
 * <a href="https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_parcels.html#concept_vwq_421_yk"> Managing Parcels. </a>
 * <a href="https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora"> How To Install Java on CentOS and Fedora </a>
 
-
+## Some ideas
+* <a href="https://gist.github.com/ciprian12/f4333b92f3b8ae5373f5b3ef91bed158" Installing zeppelin 0.6.1 with cdh 5.7.0 on ubuntu 14.04 lts </a>
 
 
 <i> The main point we should take care would be a matter of versions, specially with Python. To sum up, I could suggest a parcial solution could be install Python 3 manually. One installation per node. We aim to work and visualize notebooks on a mutli-user environment with Jupyther Hub.</i>
