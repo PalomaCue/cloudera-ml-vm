@@ -251,5 +251,13 @@ or...
 
     python --version
     
+#### Kafka version
+
+There is nothing like kafka --version at this point. So you should either check the version from your /usr/lib/kafka/cloudera  folder.
+
+    grep "version" /usr/lib/kafka/cloudera/*
+    
+    
+    
 The main problem I try to solve is that we will find several versions installed within the vm, and we must point to one or another version according to our use.
 
